@@ -7,3 +7,5 @@ RUN apk add --update --no-cache --virtual .build-deps \
            gifsicle pngquant optipng libjpeg-turbo-utils \
            udev ttf-opensans chromium \
     && rm -rf /var/cache/apk/* /tmp/*
+RUN npm install --global yarn
+
